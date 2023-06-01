@@ -11,6 +11,7 @@ function TaskInbox(props) {
                 <AppText text={"Task Inbox"} intendedFontSize={48}/>
                 <AppButton text={"Add"} intendedFontSize={30}></AppButton>
             </View>
+            <View style = {styles.TasksContainer}></View>
         </SafeAreaView>
     );
 }
@@ -25,5 +26,9 @@ const styles = StyleSheet.create({
     },
     AddButtonContainer : {
         backgroundColor: 'black'
+    },
+    TasksContainer : {
+        backgroundColor:'blue',
+        flex: 1
     }
 })
