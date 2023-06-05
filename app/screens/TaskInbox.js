@@ -1,8 +1,11 @@
 import React from 'react';
 import { SafeAreaView, View, StyleSheet } from 'react-native';
+import * as SQLite from 'expo-sqlite';
 
 import AppText from '../components/AppText';
 import AppButton from '../components/AppButton';
+
+const db = SQLite.openDatabase('tasks.db');
 
 function TaskInbox(props) {
     return (
